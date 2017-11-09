@@ -21,6 +21,11 @@ body {
 
 .header-wrapper, .footer-wrapper {
     background-color: #27262b;
+
+}
+.header-wrapper a, .footer-wrapper a {
+
+    color: #ffffff;
 }
 
 header, footer {
@@ -38,7 +43,7 @@ header, footer {
 }
 
 a {
-    color: #fff;
+
 }
 
 ul {
@@ -117,22 +122,34 @@ aside {
 
 .new {
     margin-bottom: 20px;
+    height: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-
+#search >a{
+    color: #4e2e8f;
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+}
 input[type="search"] {
-    border: 1px solid gray;
     outline: none;
-    width: 150px;
     vertical-align: middle;
-    margin: 15px auto;
-    height: 35px;
+    margin: 15px;
+    padding: 0 10px;
+    width: 200px;
+    height: 47px;
+    border-radius: 6px;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
 }
 
 /********СТИЛИ ДЛЯ БАННЕРА********/
 .banner {
     max-width: 100%;
-    height: 400px;
-    background: #d7a99a;
+    height: 500px;
+    background-color: #f4db79;
 }
 
 /********СТИЛИ ДЛЯ КОНТЕНТ********/
@@ -161,6 +178,7 @@ input[type="search"] {
 }
 
 .copiright {
+    color: #fff;
     padding: 12px 0;
     text-transform: none;
 }
