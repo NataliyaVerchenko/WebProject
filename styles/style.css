@@ -1,7 +1,7 @@
 /********Основные стили********/
 body {
     margin: 0;
- /*   letter-spacing: 1px;*/
+    /*   letter-spacing: 1px;*/
     color: #312c46;
     font-size: 16px;
     font-weight: 400;
@@ -23,6 +23,7 @@ body {
     background-color: #27262b;
 
 }
+
 .header-wrapper a, .footer-wrapper a {
 
     color: #ffffff;
@@ -30,7 +31,7 @@ body {
 
 header, footer {
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 60px 21px;
 }
 
 .clearfix:after {
@@ -63,7 +64,6 @@ h1 {
 
 ul > li {
     display: inline-block;
-    padding: 0 10px;
 
 }
 
@@ -83,15 +83,29 @@ ul > li {
     user-select: none;
 }
 
-.nav > li, .logo {
+.logo {
+    float: left;
+    /*margin: 0 20px;*/
+}
+
+.nav > li {
     margin: 0 20px;
 }
 
 .nav > li > a {
-    padding: 5px 0;
+    display: block;
+    padding: 5px 10px;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+}
+
+.nav > li:first-child {
+    margin-left: 0;
+}
+
+.nav > li:last-child {
+    margin-right: 0;
 }
 
 /********СТИЛИ ДЛЯ САЙДБАРА********/
@@ -103,11 +117,13 @@ aside {
     padding: 10px 5px 100px;
     margin-right: 30px;
 }
-.heading{
+
+.heading {
     color: #000000;
     font-size: 24px;
     font-weight: 700;
 }
+
 .img {
     float: left;
     width: 67px;
@@ -126,13 +142,15 @@ aside {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#search >a{
+
+#search > a {
     color: #4e2e8f;
     font-family: "Proxima Nova";
     font-size: 18px;
     font-weight: 400;
     text-decoration: underline;
 }
+
 input[type="search"] {
     outline: none;
     vertical-align: middle;
